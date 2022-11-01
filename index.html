@@ -11,24 +11,29 @@
 
 <body>
     <header>
-        <h1 id="title"></h1>
-        <p id="description"></p>
+        <h1 id="title">Survey form</h1>
+        <p id="description">Please fill out this form</p>
     </header>
     <form id="survey-form">
-        <label id="name-label">Enter your name</label>
-        <input id="name" type="text"/>
-        <label id="email-label">Enter your email</label>
-        <input id="email" type="email"/>
-        <label id="number-label">Enter your number</label>
-        <input id="number" type="number" min="10" max="100"/>
+        <label id="name-label" >Enter your name:</label>
+        <input id="name" type="text"required='true' placeholder="name"/><br/>
+        <label id="email-label">Enter your email:</label>
+        <input id="email" type="email" required='true' placeholder="email"/><br/>
+        <label id="number-label">Enter your number:</label>
+        <input id="number" type="number" min="10" placeholder="number"" max="100"/><br/>
         <select id="dropdown">
-            <option></option>
-            <option></option>
-        </select>
-        <input type="radio" value="checkbox" name="name"/>
-        <input type="radio" value="checkbox" name="name"/>
-        <textarea>Additional comments</textarea>
-        <button id="submit"></button>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select><br/>
+        <label>Checkbox input 1</label>
+        <input type="checkbox" value="checkbox1"></input><br/>
+        <label>Checkbox input 1</label>
+        <input type="checkbox" value="checkbox2"></input><br/>
+        <label>Radio input 2</label>
+        <input type="radio" value="checkbox" name="name"/><br/><label>Radio input 1</label>
+        <input type="radio" value="checkbox" name="name"/><br/>
+        <textarea>Additional comments</textarea><br/>
+        <button id="submit">Submit</button>
     </form>
     <script src="index.js"></script>
 </body>
