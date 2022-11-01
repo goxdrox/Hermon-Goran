@@ -10,6 +10,26 @@
 </head>
 
 <body>
+    <header>
+        <h1 id="title"></h1>
+        <p id="description"></p>
+    </header>
+    <form id="survey-form">
+        <label id="name-label">Enter your name</label>
+        <input id="name" type="text"/>
+        <label id="email-label">Enter your email</label>
+        <input id="email" type="email"/>
+        <label id="number-label">Enter your number</label>
+        <input id="number" type="number" min="10" max="100"/>
+        <select id="dropdown">
+            <option></option>
+            <option></option>
+        </select>
+        <input type="radio" value="checkbox" name="name"/>
+        <input type="radio" value="checkbox" name="name"/>
+        <textarea>Additional comments</textarea>
+        <button id="submit"></button>
+    </form>
     <script src="index.js"></script>
 </body>
 
